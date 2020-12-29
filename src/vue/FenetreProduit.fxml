@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: ffc592;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.FenetreProduit">
+    <children>
+        <GridPane prefHeight="249.0" prefWidth="644.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="122.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="12.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="428.0" minWidth="10.0" prefWidth="120.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.0" minWidth="10.0" prefWidth="282.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.0" minWidth="10.0" prefWidth="87.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Nom :" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <TextField fx:id="nom" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.valignment="CENTER" />
+                <TextArea fx:id="description" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                <Label text="Description :" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label text="Tarif :" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <TextField fx:id="tarif" maxHeight="-Infinity" maxWidth="-Infinity" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Label text="euros a l'unité" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <Label text="Catégorie :" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+                <ChoiceBox fx:id="categ" prefHeight="30.0" prefWidth="127.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            </children>
+            <padding>
+                <Insets top="30.0" />
+            </padding>
+        </GridPane>
+        <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="100.0" prefWidth="646.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onclickcree" text="Créer" textFill="#8800ff">
+                    <FlowPane.margin>
+                        <Insets />
+                    </FlowPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+                </Button>
+            </children>
+        </FlowPane>
+        <FlowPane alignment="CENTER" prefHeight="100.0" prefWidth="656.0">
+            <children>
+                <Label fx:id="affiche" text="Ajoutez un produit">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            </children>
+            <padding>
+                <Insets bottom="40.0" />
+            </padding>
+        </FlowPane>
+    </children>
+</VBox>

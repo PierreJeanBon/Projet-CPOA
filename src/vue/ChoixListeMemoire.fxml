@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffc592;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ControleurMenu">
+   <children>
+      <VBox alignment="CENTER" spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="versGestionClientLM" mnemonicParsing="false" onAction="#onClickVersGestionClientLM" style="-fx-border-color: lightgreen;" text="Gestion client" textFill="#2b00ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="versGestionProduitLM" mnemonicParsing="false" onAction="#onClickVersGestionProduitLM" style="-fx-border-color: lightgreen;" text="Gestion Produit" textFill="#2b00ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="versGestionCommandeLM" mnemonicParsing="false" onAction="#onClickVersGestionCommandeLM" style="-fx-border-color: lightgreen;" text="Gestion Commande" textFill="#2b00ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="versGestionCategorieLM" mnemonicParsing="false" onAction="#onClickVersGestionCategorieLM" style="-fx-border-color: lightgreen;" text="Gestion Categorie" textFill="#2b00ff">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER" spacing="80.0">
+               <children>
+                  <Button fx:id="versSQLouListe" mnemonicParsing="false" onAction="#onClickRetourSQLouListe" style="-fx-border-color: #691111;" text="Retour" textFill="#691111">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <Button fx:id="quitter" mnemonicParsing="false" onAction="#onClickQuitter" style="-fx-border-color: red;" text="Quitter" textFill="RED">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

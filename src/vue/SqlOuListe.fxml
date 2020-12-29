@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: ffc592;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ControleurMenu">
+    <children>
+        <VBox alignment="CENTER" style="-fx-border-color: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Bienvenue dans la boutique des pulls moches !" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+                <Label text="Choississez là où vous désirez aller :" textFill="#0fa10a">
+                    <VBox.margin>
+                        <Insets top="50.0" />
+                    </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+                </Label>
+                <HBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="100.0">
+                    <children>
+                        <Button fx:id="btnListeMemoire" mnemonicParsing="false" onAction="#versChoixLM" style="-fx-border-color: lightgreen;" text="Liste Memoire" textFill="#2b00ff">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                        <Button fx:id="btnSQL" mnemonicParsing="false" onAction="#versChoixSQL" style="-fx-border-color: lightgreen;" text="Base de données" textFill="#2b00ff">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Button>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets top="50.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

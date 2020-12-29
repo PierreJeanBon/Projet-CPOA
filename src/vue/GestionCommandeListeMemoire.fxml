@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane onMouseClicked="#clickRienCommandeLM" prefHeight="550.0" prefWidth="783.0" style="-fx-background-color: ffc592;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ControleurCommandeLM">
+   <children>
+      <GridPane prefHeight="550.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="137.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="463.0" minWidth="10.0" prefWidth="199.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="463.0" minWidth="10.0" prefWidth="124.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="463.0" minWidth="10.0" prefWidth="198.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="txtIdCommmandeLM" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#clickTextCommandeLM" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></TextField>
+                  <TextField fx:id="txtIdProduitLM" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#clickTextCommandeLM" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin></TextField>
+                  <Label text="id de la commande :" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label text="id du produit :" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label text="id du client :" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Button fx:id="ajouterCommandeLM" mnemonicParsing="false" onAction="#onClickAjouterCommandeLM" text="Ajouter" textFill="#8800ff" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Button>
+                  <TextField fx:id="txtIdClientLM" layoutX="137.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#clickTextCommandeLM" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <Label layoutX="37.0" layoutY="36.0" text="date_commande :" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label layoutX="288.0" layoutY="36.0" text="quantité :" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label layoutX="288.0" layoutY="36.0" text="tarif unitaire :" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <TextField fx:id="txtDateCommmandeLM" layoutX="128.0" layoutY="32.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#clickTextCommandeLM" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtQuantiteCommmandeLM" layoutX="128.0" layoutY="101.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#clickTextCommandeLM" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="txtTarifUnitaireCommmandeLM" layoutX="128.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#clickTextCommandeLM" prefHeight="25.0" prefWidth="63.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                  </TextField>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="35.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="573.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="295.0" minWidth="0.0" prefWidth="119.0" />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+                  <ColumnConstraints />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="237.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="237.0" minHeight="10.0" prefHeight="167.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="132.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TableView fx:id="tableCommandeLM" onMouseClicked="#clickTableCommandeLM" prefHeight="212.0" prefWidth="448.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="listeIdCommandeLM" prefWidth="150.0" text="id_commande" />
+                      <TableColumn fx:id="listeIdProduitLM" prefWidth="150.0" text="id_produit" />
+                        <TableColumn fx:id="listeIdClientCommandeLM" prefWidth="129.0" text="id_client" />
+                        <TableColumn fx:id="listeDateCommandeLM" prefWidth="129.0" text="date_commande" />
+                        <TableColumn fx:id="listeQuantiteCommandeLM" prefWidth="129.0" text="quantite" />
+                        <TableColumn fx:id="listeTarifUnitaireCommandeLM" prefWidth="129.0" text="tarif_unitaire" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Button fx:id="retourChoixLM" mnemonicParsing="false" onAction="#onClickRetourLM" text="Retour" textFill="#691111" GridPane.columnSpan="6" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Button>
+                  <VBox alignment="CENTER" spacing="30.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="modifierCommandeLM" mnemonicParsing="false" text="Modifier">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                        <Button fx:id="supprimerCommandeLM" mnemonicParsing="false" onAction="#onClickSupprimerCommandeLM" text="Supprimer" textFill="RED">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Button>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label text="Trier par :">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                        <ChoiceBox fx:id="listeCommandeLM" prefWidth="150.0" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
